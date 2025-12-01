@@ -492,6 +492,8 @@
             <div class="card shadow-sm">
               <div class="card-body">
                 <form action="https://formspree.io/f/xyzyjvbd" method="POST">
+                  <!-- Honeypot field for bot protection -->
+                  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                   <div id="form-success" class="alert alert-success" style="display:none" role="alert" aria-live="polite">
                     Thank you! Your inquiry has been received. We will respond shortly.
                   </div>
