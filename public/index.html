@@ -38,8 +38,28 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/agency.min.css" rel="stylesheet">
     <style>
-      /* Ensure faster font rendering */
-      @font-face {font-display: swap;}
+      /* Mobile optimizations */
+      @media (max-width: 767px) {
+        .masthead .intro-heading { font-size: 2rem !important; line-height: 1.2 !important; }
+        .masthead .intro-lead-in { font-size: 1rem !important; line-height: 1.4 !important; }
+        section { padding: 60px 0 !important; }
+        section h2.section-heading { font-size: 1.75rem !important; }
+        .fa-stack { font-size: 3em !important; }
+        .btn-xl { font-size: 16px !important; padding: 15px 30px !important; }
+        .card-body { padding: 1.5rem !important; }
+        .col-lg-4.text-center, .col-md-4, .col-md-6 { margin-bottom: 2rem; }
+        .section-subheading { font-size: 0.9rem !important; }
+      }
+      /* Tablet optimizations */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .masthead .intro-heading { font-size: 3rem !important; }
+        section { padding: 80px 0 !important; }
+      }
+      /* Touch-friendly elements */
+      @media (max-width: 991px) {
+        a, button, .btn { min-height: 44px; min-width: 44px; }
+        .nav-link { padding: 1rem !important; }
+      }
     </style>
     <script type="application/ld+json">
     {
@@ -472,19 +492,19 @@
 
         <!-- Contact Methods -->
         <div class="row mb-4">
-          <div class="col-lg-4 text-center">
+          <div class="col-lg-4 col-md-6 text-center mb-3 mb-lg-0">
             <a href="tel:+13012223037" class="d-inline-block">
               <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
               <p class="section-subheading mb-0"><em>(+1) 301-222-3037</em></p>
             </a>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-lg-4 col-md-6 text-center mb-3 mb-lg-0">
             <a href="mailto:lummycreations.lc@gmail.com" class="d-inline-block">
               <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
-              <p class="section-subheading mb-0"><em>Lummycreations.lc@gmail.com</em></p>
+              <p class="section-subheading mb-0" style="word-break: break-word;"><em>Lummycreations.lc@gmail.com</em></p>
             </a>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-lg-4 col-md-12 text-center">
             <a href="https://calendly.com/tolulopeakinlabi" target="_blank" rel="noopener noreferrer" class="d-inline-block">
               <i class="fa fa-calendar fa-3x mb-3 sr-contact"></i>
               <p class="section-subheading mb-0"><em>Schedule a Call</em></p>
