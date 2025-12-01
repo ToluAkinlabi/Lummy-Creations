@@ -67,3 +67,18 @@ node_modules/
 
 .vercel
 .env*.local
+
+# Project / deployment configuration (keep tracked except secrets)
+firebase.json
+# vercel.json REMOVED from ignore to allow versioning of headers & routing
+.vercelignore
+.firebaserc
+
+# Additional environment variants
+.env.production
+.env.staging
+.env.development
+
+# Editor / misc
+.DS_Store
+Thumbs.db
