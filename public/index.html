@@ -343,27 +343,71 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Let's Accelerate Your AI Product</h2>
             <hr>
-            <h5 class="mb-5 section-subheading">Ready to transform your AI vision into a secure, production-ready solution? Whether you're an enterprise seeking AI governance, a startup building your MVP, or a founder with an innovative idea, let's discuss how we can accelerate your journey.</h5>
+            <h5 class="mb-4 section-subheading">Ready to transform your AI vision into a secure, production-ready solution? Whether you're an enterprise seeking AI governance, a startup building your MVP, or a founder with an innovative idea, let's discuss how we can accelerate your journey.</h5>
           </div>
         </div>
+
+        <!-- Contact Methods -->
+        <div class="row mb-4">
+          <div class="col-lg-6 mr-auto text-center">
+            <a href="tel:+13012223037" class="d-inline-block">
+              <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+              <p class="section-subheading mb-0"><em>(+1) 301-222-3037</em></p>
+            </a>
+          </div>
+          <div class="col-lg-6 mr-auto text-center">
+            <a href="mailto:lummycreations.lc@gmail.com" class="d-inline-block">
+              <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
+              <p class="section-subheading mb-0"><em>Lummycreations.lc@gmail.com</em></p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lead Capture Form (Formspree) -->
         <div class="row">
-          <div class="col-lg-6 mr-auto text-center">
-              <li class="list-inline-item">
-                <a href="tel:+13012223037">
-                  <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                  <p class= "section-subheading"><em>(+1) 301-222-3037</em></p>
-                </a>
-              </li>
-          </div>
-          <div class="col-lg-6 mr-auto text-center">
-              <li class="list-inline-item">
-                <a href="mailto:lummycreations.lc@gmail.com">
-                  <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
-                  <p class= "section-subheading"><em>Lummycreations.lc@gmail.com</em></p>
-                </a>
-              </li>
+          <div class="col-lg-8 mx-auto">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <form action="https://formspree.io/f/xyzyjvbd" method="POST">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="company">Company</label>
+                      <input type="text" class="form-control" id="company" name="company" placeholder="Company or organization">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="segment">Client Type</label>
+                      <select id="segment" name="segment" class="form-control">
+                        <option>Enterprise</option>
+                        <option>Startup</option>
+                        <option>Founder</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">How can we help?</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Briefly describe your goals or challenges" required></textarea>
+                  </div>
+                  <!-- Honeypot field to reduce spam -->
+                  <input type="text" name="_gotcha" style="display:none">
+                  <!-- Redirect after success (optional) -->
+                  <input type="hidden" name="_subject" value="New Lead: Lummy Creations Consulting">
+                  <button type="submit" class="btn btn-primary btn-md text-uppercase">Send Inquiry</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="row mt-4">
           <div class="col-lg-8 mx-auto text-center">
             <p class="text-white"><small>Based in Maryland | Serving Clients Nationwide</small></p>
