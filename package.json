@@ -1,0 +1,42 @@
+{
+  "name": "lumora-consulting-website",
+  "version": "1.0.0",
+  "description": "Lumora Consulting - AI Product Accelerator website with comprehensive test suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:functional": "jest tests/functional",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose"
+  },
+  "keywords": [
+    "lumora",
+    "consulting",
+    "AI",
+    "testing"
+  ],
+  "author": "Tolulope Akinlabi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "jsdom": "^22.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "public/**/*.html",
+      "public/**/*.css",
+      "public/**/*.js",
+      "!public/vendor/**",
+      "!**/node_modules/**"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "verbose": true
+  }
+}

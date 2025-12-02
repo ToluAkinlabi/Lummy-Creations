@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Security & Product Acceleration Playbook | Lumora Consulting</title>
+  <meta name="description" content="Download the 2025 AI Security & Product Acceleration Playbook - Strategic guide featuring secure architectures, risk frameworks, and MVP blueprints from Lumora Consulting.">
+  <link rel="canonical" href="https://lummycreations.com/playbook">
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Security & Product Acceleration Playbook | Lumora Consulting">
+  <meta property="og:description" content="Premium strategic guide: Secure AI architectures, risk frameworks, guardrail models, and 14-day MVP blueprint.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lummycreations.com/playbook">
+  <meta property="og:image" content="https://lummycreations.com/img/og-cover.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/agency.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto Slab', serif; font-weight: 400; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+    
+    .playbook-card { 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .playbook-card:hover { 
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+      border-color: rgba(254,209,54,0.3);
+    }
+    .icon-circle { 
+      width: 64px; 
+      height: 64px; 
+      border-radius: 50%; 
+      background: linear-gradient(135deg, #fed136 0%, #fec503 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 4px 12px rgba(254,209,54,0.3);
+      transition: all 0.3s;
+    }
+    .playbook-card:hover .icon-circle {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(254,209,54,0.5);
+    }
+    .btn-download {
+      background: linear-gradient(135deg, #fed136 0%, #fec503 100%);
+      border: none;
+      color: #212529;
+      font-weight: 700;
+      padding: 18px 45px;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      box-shadow: 0 4px 14px rgba(254,209,54,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-download:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s;
+    }
+    .btn-download:hover:before {
+      left: 100%;
+    }
+    .btn-download:hover {
+      background: linear-gradient(135deg, #fec503 0%, #fed136 100%);
+      color: #212529;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(254,209,54,0.5);
+    }
+    .form-control:focus {
+      border-color: #fed136;
+      box-shadow: 0 0 0 0.2rem rgba(254,209,54,0.25);
+    }
+    .masthead { 
+      background: linear-gradient(135deg, #1a1d23 0%, #2d3238 50%, #1a1d23 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .masthead:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(254,209,54,0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .badge-tag {
+      background: rgba(254,209,54,0.15);
+      color: #fed136;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      display: inline-block;
+      margin-bottom: 20px;
+      border: 1px solid rgba(254,209,54,0.3);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+      opacity: 0;
+    }
+    .animate-in:nth-child(1) { animation-delay: 0.1s; }
+    .animate-in:nth-child(2) { animation-delay: 0.2s; }
+    .animate-in:nth-child(3) { animation-delay: 0.3s; }
+    .animate-in:nth-child(4) { animation-delay: 0.4s; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#212529; box-shadow: 0 2px 12px rgba(0,0,0,0.3);">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.5px;">Lumora Consulting</a>
+      <div class="ml-auto">
+        <a href="https://calendly.com/lumoraconsult" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm mr-2" style="transition: all 0.3s;"><i class="fa fa-calendar mr-2"></i>Schedule A Call</a>
+        <a href="index.html" class="btn btn-outline-light btn-sm" style="transition: all 0.3s;"><i class="fa fa-arrow-left mr-2"></i>Back to Home</a>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="masthead" style="padding: 140px 0 100px; position: relative;">
+    <div class="container text-center" style="position: relative; z-index: 1;">
+      <div class="badge-tag">FREE STRATEGIC GUIDE</div>
+      <h1 class="text-white mb-3" style="font-size: 3.2rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.5px;">AI Security & Product<br>Acceleration Playbook</h1>
+      <p class="text-white" style="font-size: 1.4rem; margin-bottom: 12px; font-weight: 300;">2025 Edition</p>
+      <p class="text-white-50" style="font-size: 1.1rem; margin-bottom: 8px;">A premium strategic guide from <strong style="color: #fed136;">Lumora Consulting™</strong></p>
+      <p class="text-white-50" style="font-style: italic; font-size: 0.95rem; opacity: 0.7;">A division of Lummy Creations LLC — Built Beyond Excellence</p>
+      <div style="margin-top: 40px;">
+        <a href="#download" class="btn btn-download text-uppercase">
+          <i class="fa fa-download mr-2"></i>Get Your Free Copy
+        </a>
+        <a href="https://calendly.com/lumoraconsult" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-xl text-uppercase" style="margin-left: 15px;">
+          <i class="fa fa-calendar mr-2"></i>Schedule A Call
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    
+    <!-- What's Inside -->
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="mb-4">What's Inside the Playbook</h2>
+        <p class="lead">A comprehensive, actionable guide crafted for enterprises, startups, and founders building secure AI products with confidence and velocity.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-4 animate-in">
+        <div class="card h-100 shadow-sm playbook-card">
+          <div class="card-body p-4 text-center">
+            <div class="icon-circle"><i class="fa fa-shield fa-2x text-white"></i></div>
+            <h4 class="card-title mb-3" style="font-weight: 600; color: #212529;">Secure AI Architectures</h4>
+            <p class="text-muted mb-0" style="line-height: 1.7;">Reference designs for enterprise-grade AI systems with built-in security, guardrails, and compliance frameworks aligned to OWASP standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animate-in">
+        <div class="card h-100 shadow-sm playbook-card">
+          <div class="card-body p-4 text-center">
+            <div class="icon-circle"><i class="fa fa-exclamation-triangle fa-2x text-white"></i></div>
+            <h4 class="card-title mb-3" style="font-weight: 600; color: #212529;">AI Risk Frameworks</h4>
+            <p class="text-muted mb-0" style="line-height: 1.7;">Proven methodologies for assessing, scoring, and mitigating AI-specific risks including model bias, data leakage, and adversarial threats.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animate-in">
+        <div class="card h-100 shadow-sm playbook-card">
+          <div class="card-body p-4 text-center">
+            <div class="icon-circle"><i class="fa fa-check-square-o fa-2x text-white"></i></div>
+            <h4 class="card-title mb-3" style="font-weight: 600; color: #212529;">Guardrail Implementation Models</h4>
+            <p class="text-muted mb-0" style="line-height: 1.7;">Practical patterns for input validation, output filtering, prompt injection defense, and data redaction strategies for LLM-powered applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 animate-in">
+        <div class="card h-100 shadow-sm playbook-card">
+          <div class="card-body p-4 text-center">
+            <div class="icon-circle"><i class="fa fa-rocket fa-2x text-white"></i></div>
+            <h4 class="card-title mb-3" style="font-weight: 600; color: #212529;">MVP Acceleration Framework</h4>
+            <p class="text-muted mb-0" style="line-height: 1.7;">Structured approach to building investor-ready AI prototypes: from concept validation to technical architecture and go-to-market positioning.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row mt-4 mb-5">
+      <div class="col-lg-8 mx-auto">
+        <div class="card bg-light">
+          <div class="card-body p-4">
+            <h5 class="mb-3"><i class="fa fa-calendar-check-o text-primary mr-2"></i>Bonus: 14-Day AI Product Blueprint</h5>
+            <p class="text-muted mb-0">A day-by-day execution plan for launching your first secure AI product from requirements gathering to deployment checklist, designed for solo founders and lean teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download Form -->
+    <div class="row mb-5" id="download">
+      <div class="col-lg-6 mx-auto">
+        <div class="card shadow-lg" style="border: 2px solid rgba(254,209,54,0.3); border-radius: 8px;">
+          <div class="card-body p-5">
+            <div class="text-center mb-4">
+              <div class="icon-circle" style="margin: 0 auto 1.5rem;">
+                <i class="fa fa-download fa-2x text-white"></i>
+              </div>
+              <h3 class="mb-3" style="font-weight: 600; color: #212529;">Download Your Free Playbook</h3>
+              <p class="text-muted" style="font-size: 1.05rem;">Enter your details below and get instant access to the complete guide.</p>
+            </div>
+
+              <form action="https://formspree.io/f/xgvgykgo" method="POST" id="playbook-form" data-download-url="./playbook/Lumora AI Security & Product Acceleration Playbook (2025 Enterprise Edition).pdf">
+                <input type="hidden" name="_subject" value="Playbook Download: Lumora Consulting">
+                <input type="hidden" name="lead_source" value="Playbook Landing Page">
+                <!-- Honeypot -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                
+                <div class="form-group">
+                  <label for="full_name" style="font-weight: 400;">Full Name</label>
+                  <input type="text" class="form-control form-control-lg" id="full_name" name="full_name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" style="font-weight: 400;">Work Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="you@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="company" style="font-weight: 400;">Company (Optional)</label>
+                  <input type="text" class="form-control form-control-lg" id="company" name="company" placeholder="Your organization">
+                </div>
+
+                <div class="form-group">
+                  <label for="role" style="font-weight: 400;">Role (Optional)</label>
+                  <select class="form-control form-control-lg" id="role" name="role">
+                    <option value="">Select your role</option>
+                    <option>Founder / CEO</option>
+                    <option>CTO / VP Engineering</option>
+                    <option>Product Manager</option>
+                    <option>Security Lead</option>
+                    <option>AI/ML Engineer</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-download btn-block text-uppercase mt-4">
+                  <i class="fa fa-download mr-2"></i>Download Now
+                </button>
+
+                <p class="text-center text-muted mt-3 mb-0" style="font-size: 0.85rem;">
+                  <i class="fa fa-lock mr-1"></i>We respect your privacy. No spam, ever.
+                </p>
+              </form>
+              <div id="success-message" class="alert alert-success mt-4" style="display:none;" role="alert" aria-live="polite" aria-atomic="true">
+                <strong>Success!</strong> Check your email for the download link.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- Trust Indicators -->
+    <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <div class="card bg-light">
+          <div class="card-body p-4 text-center">
+            <h5 class="mb-3">Questions or Need Support?</h5>
+            <p class="mb-3">Contact us for guidance on implementing these frameworks in your organization.</p>
+            <a href="mailto:lummycreations.lc@gmail.com" class="btn btn-primary"><i class="fa fa-envelope mr-2"></i>lummycreations.lc@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="small text-muted">Trusted by enterprise security teams, venture-backed AI startups, and solo founders building the future.</p>
+      </div>
+    </div>
+    </div>
+
+  <footer class="py-4" style="background:#212529;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-white">
+          <span>© Lummy Creations LLC 2025</span>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="privacy.html" class="text-white">Privacy</a>
+          <span class="text-white mx-2">·</span>
+          <a href="terms.html" class="text-white">Terms</a>
+          <span class="text-white mx-2">·</span>
+          <a href="index.html" class="text-white">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Form submission handling
+    $('#playbook-form').on('submit', function(e) {
+      e.preventDefault();
+      
+      $.ajax({
+        url: $(this).attr('action'),
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function() {
+          $('#playbook-form').hide();
+          $('#success-message').show();
+          
+          // Trigger actual download or redirect to file
+          var downloadUrl = $('#playbook-form').data('download-url');
+          if (downloadUrl) {
+            // Create a temporary anchor to force download
+            var a = document.createElement('a');
+            a.href = downloadUrl;
+            a.setAttribute('download', 'Lumora AI Security & Product Acceleration Playbook (2025 Enterprise Edition).pdf');
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          }
+        },
+        error: function() {
+          alert('There was an error submitting the form. Please try again or contact us directly.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -4,19 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Service | Lumora Consulting</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/agency.min.css" rel="stylesheet">
   <style>
-    .terms-card { transition: transform 0.2s; }
-    .terms-card:hover { transform: translateY(-5px); }
-    .icon-box { width: 50px; height: 50px; border-radius: 8px; background: #fed136; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    body { font-family: 'Roboto Slab', serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    .terms-card { 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .terms-card:hover { 
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+      border-color: rgba(254,209,54,0.3);
+    }
+    .icon-box { 
+      width: 64px; 
+      height: 64px; 
+      border-radius: 50%; 
+      background: linear-gradient(135deg, #fed136 0%, #fec503 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin-bottom: 1.25rem;
+      box-shadow: 0 4px 12px rgba(254,209,54,0.3);
+      transition: all 0.3s;
+    }
+    .terms-card:hover .icon-box {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(254,209,54,0.5);
+    }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#212529;">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Lumora Consulting</a>
+      <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.5px;">Lumora Consulting</a>
       <a href="index.html" class="btn btn-outline-light btn-sm ml-auto">← Back to Home</a>
     </div>
   </nav>
@@ -39,7 +70,7 @@
       <div class="col-md-6 mb-4">
         <div class="card h-100 shadow-sm terms-card">
           <div class="card-body p-4">
-            <div class="icon-box"><i class="fa fa-laptop fa-lg text-white"></i></div>
+            <div class="icon-box"><i class="fa fa-laptop fa-2x text-white"></i></div>
             <h4 class="card-title mb-3">Use of Site</h4>
             <p class="text-muted">This website provides information about our AI consulting services. Please use it responsibly. Do not attempt to disrupt, hack, or misuse the site or its resources.</p>
           </div>
@@ -49,7 +80,7 @@
       <div class="col-md-6 mb-4">
         <div class="card h-100 shadow-sm terms-card">
           <div class="card-body p-4">
-            <div class="icon-box"><i class="fa fa-handshake-o fa-lg text-white"></i></div>
+            <div class="icon-box"><i class="fa fa-handshake-o fa-2x text-white"></i></div>
             <h4 class="card-title mb-3">Services</h4>
             <p class="text-muted">All consulting engagements are governed by a separate written agreement or statement of work detailing scope, deliverables, timelines, and fees.</p>
           </div>
@@ -59,7 +90,7 @@
       <div class="col-md-6 mb-4">
         <div class="card h-100 shadow-sm terms-card">
           <div class="card-body p-4">
-            <div class="icon-box"><i class="fa fa-copyright fa-lg text-white"></i></div>
+            <div class="icon-box"><i class="fa fa-copyright fa-2x text-white"></i></div>
             <h4 class="card-title mb-3">Intellectual Property</h4>
             <p class="text-muted">All content, designs, and materials on this site are owned by Lummy Creations LLC or licensed to us. You may not copy, reproduce, or redistribute without explicit permission.</p>
           </div>
@@ -69,7 +100,7 @@
       <div class="col-md-6 mb-4">
         <div class="card h-100 shadow-sm terms-card">
           <div class="card-body p-4">
-            <div class="icon-box"><i class="fa fa-info-circle fa-lg text-white"></i></div>
+            <div class="icon-box"><i class="fa fa-info-circle fa-2x text-white"></i></div>
             <h4 class="card-title mb-3">Disclaimer</h4>
             <p class="text-muted">Site materials are provided "as is" without warranties. We are not liable for indirect or consequential damages arising from your use of this website.</p>
           </div>
@@ -77,23 +108,23 @@
       </div>
     </div>
 
-    <div class="row mt-4">
+    <!-- <div class="row mt-4">
       <div class="col-lg-10 mx-auto">
-        <div class="card bg-light">
-          <div class="card-body p-4">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <h5 class="mb-2"><i class="fa fa-gavel text-primary mr-2"></i>Governing Law</h5>
-                <p class="mb-0 text-muted">These Terms are governed by the laws of the State of Maryland, United States of America.</p>
-              </div>
-              <div class="col-md-4 text-center">
-                <i class="fa fa-balance-scale fa-3x text-muted"></i>
-              </div>
-            </div>
+      <div class="card bg-light">
+        <div class="card-body p-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+          <h5 class="mb-2"><i class="fa fa-gavel text-primary mr-2"></i>Governing Law</h5>
+          <p class="mb-0 text-muted">These Terms are governed by the laws of the State of Maryland, United States of America.</p>
+          </div>
+          <div class="col-md-4 text-center">
+          <i class="fa fa-balance-scale fa-3x text-muted"></i>
           </div>
         </div>
+        </div>
       </div>
-    </div>
+      </div>
+    </div> -->
 
     <div class="row mt-5">
       <div class="col-lg-8 mx-auto">

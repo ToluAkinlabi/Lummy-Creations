@@ -4,19 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | Lumora Consulting</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/agency.min.css" rel="stylesheet">
   <style>
-    .policy-card { transition: transform 0.2s; }
-    .policy-card:hover { transform: translateY(-5px); }
-    .icon-circle { width: 60px; height: 60px; border-radius: 50%; background: #fed136; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    body { font-family: 'Roboto Slab', serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    .policy-card { 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .policy-card:hover { 
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+      border-color: rgba(254,209,54,0.3);
+    }
+    .icon-circle { 
+      width: 64px; 
+      height: 64px; 
+      border-radius: 50%; 
+      background: linear-gradient(135deg, #fed136 0%, #fec503 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin: 0 auto 1rem;
+      box-shadow: 0 4px 12px rgba(254,209,54,0.3);
+      transition: all 0.3s;
+    }
+    .policy-card:hover .icon-circle {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(254,209,54,0.5);
+    }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#212529;">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Lumora Consulting</a>
+      <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.5px;">Lumora Consulting</a>
       <a href="index.html" class="btn btn-outline-light btn-sm ml-auto">← Back to Home</a>
     </div>
   </nav>
