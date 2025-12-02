@@ -138,9 +138,11 @@ Work built beyond excellence.
 ---
 
 **Implementation Across Site:**
-- Hero: Lumora purpose statement beneath tagline
-- About Timeline: Doctrine of Exceptionalism as first card; Advisory Philosophy integrated
-- Methodology: "Exceptionalism isn't accidental — it's architected."
+- Hero: Lumora purpose statement beneath tagline (clean, no service pillars)
+- Navbar: Persistent "Schedule A Call" CTA alongside navigation
+- About Timeline: "Our Core Value - Exceptionalism" as first card with full doctrine articulation; Advisory Philosophy integrated
+- Methodology: "Exceptionalism isn't accidental, it's inherent."
+- Contact Section: Early tagline reinforcement above form
 - Footer: Tagline attribution with parent company line
 
 ### Color Palette
